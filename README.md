@@ -23,12 +23,16 @@ run with:
 ./prog -d	for warehouse receiving desk interface 
 
 
+
+
 All data values store in the databases are strings.
 
 All product names are integers to make searching/referenceing easier
 
 All prices and quantities are integers so that std::stoi() and std::to_string() can be used to easily
 convert between string and integers for calculations. 
+
+
 
 
 
@@ -49,6 +53,9 @@ notes on orders:
 			of the order).
 		
 		2. email, address, status are all the same for every row in the 'entire order'
+
+
+
 
 Each row in Leg_data:
 
