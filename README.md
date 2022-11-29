@@ -3,15 +3,23 @@
 General Notes:
 
 compile/link with:		
+
 g++ -g -Wall -std=c++14 -c -o main.o main.cpp		
+
 g++ -g -Wall -std=c++14 -c -o database.o database.cpp
+
 g++ -g -Wall -std=c++14 -c -o legacy_database.o legacy_database.cpp
+
 g++ -g -Wall -std=c++14 -o prog main.o legacy_database.o database.o
 
 run with:
+
 ./prog -u 	for user interface
+
 ./prog -w	for warehouse interface 
+
 ./prog -a	for admin interface 
+
 ./prog -d	for warehouse receiving desk interface 
 
 
