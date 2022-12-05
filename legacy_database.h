@@ -1,7 +1,5 @@
 /*
  * Eric Stoddard
- * Saraswi Vollala
- * Dulguun Narmandakh
  *
  * CSCI 467 - PE1
  *
