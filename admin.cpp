@@ -105,18 +105,18 @@ void Catlog::Update(const std::string& title, int total, float cost) {
 }
 
 int main() {
-        std::ifstream ifs("database.h");
+        std::ifstream ad("database.h");
 	Catlog sto;
 	int option {};
 
-	if (ifs) {
+	if (ad) {
 		std::string header;
 
-		std::getline(ifs, header);
-		for (DocList rec; ifs >> rec; sto.Addproduct(rec));
+		std::getline(ad, header);
+		for (DocList rec; ad >> rec; sto.Addproduct(rec));
 		std::cout << "File read\n\n";
 	} else
-		std::cout << "File could not be read\n\n";
+		std::cout << "Couldn't read the file\n\n";
 
 	do {
 		std::string title;
