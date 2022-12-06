@@ -1,3 +1,6 @@
+*/
+*Saraswi Vollala
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -193,7 +196,7 @@ int main() {
 			 case 6:
 				break;
 
-			OTHER:
+			default:
 				std::cout << "!!Choose an option from the above list!!\n";
 		}
 	} while (option != 6);
