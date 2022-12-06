@@ -136,7 +136,7 @@ int main() {
 		std::cin.ignore();
 
 		switch (option) {
-			 1:
+			 case 1:
 				std::cout << "\n\t\t\t ENTER TILTE OF PRODUCT : ";
 				std::getline(std::cin, title);
 
@@ -149,13 +149,13 @@ int main() {
 				sto.Addproduct(title, quantity, unit_cost);
 				break;
 
-			 2:
+			 case 2:
 				std::cout << "\n\t\t\t ENTER TILTE OF PRODUCT : ";
 				std::getline(std::cin, title);
 				sto.Removeproduct(title);
 				break;
 
-			 3:
+			 case 3:
 				{
 					std::cout << "\n\t\t\t ENTER TILTE OF PRODUCT : ";
 					std::getline(std::cin, title);
@@ -172,7 +172,7 @@ int main() {
 				}
 				break;
 
-			 4:
+			 case 4:
 				std::cout << "\n\t\t\t ENTER DETAILS FOR UPDATE : ";
 				std::cout << "\n\t\t\t ENTER TITLE OF PRODUCT : ";
 				std::getline(std::cin, title);
@@ -186,11 +186,11 @@ int main() {
 				sto.Update(title, quantity, unit_cost);
 				break;
 
-			 5:
+			 case 5:
 				sto.SHOW();
 				break;
 
-			 6:
+			 case 6:
 				break;
 
 			OTHER:
